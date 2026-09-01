@@ -86,7 +86,7 @@ void atualizarBola(Bola *b) {
         b->vel.y *= -1;
 }
 
-/* EXERCÍCIO 2: Atualiza a matriz de acordo com a posição de cada bola */
+/*  Atualiza a matriz de acordo com a posição de cada bola */
 void atualizarMapaDeCalor(int **matriz, int linhas, int colunas, Bola *bolas, int quantidade) {
     for (int i = 0; i < quantidade; i++) {
         Bola *b = (bolas + i);
@@ -102,7 +102,7 @@ void atualizarMapaDeCalor(int **matriz, int linhas, int colunas, Bola *bolas, in
     }
 }
 
-/* EXERCÍCIO 2: Conta quantas células foram visitadas */
+/* Conta quantas células foram visitadas */
 int contarCelulasVisitadas(int **matriz, int linhas, int colunas) {
     int visitadas = 0;
     for (int i = 0; i < linhas; i++) {
@@ -132,7 +132,7 @@ int main(void) {
     while (!WindowShouldClose()) {
 
         // ===============================================================
-        // EXERCÍCIO 1: Adicionar ou remover bolas em tempo real
+        //  Adicionar ou remover bolas em tempo real
         // ===============================================================
         if (IsKeyPressed(KEY_SPACE)) {
             quantidadeBolas++;
@@ -174,10 +174,10 @@ int main(void) {
             atualizarBola(bolas + i);
         }
 
-        // EXERCÍCIO 2: Atualizar mapa de calor na matriz
+        // Atualizar mapa de calor na matriz
         atualizarMapaDeCalor(grade, linhas, colunas, bolas, quantidadeBolas);
 
-        // EXERCÍCIO 2: Contar células visitadas
+        // Contar células visitadas
         int totalVisitadas = contarCelulasVisitadas(grade, linhas, colunas);
 
         // ===============================================================
