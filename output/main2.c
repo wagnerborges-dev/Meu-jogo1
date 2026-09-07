@@ -1,5 +1,4 @@
-123
-    /*
+/*
  * Enum + Struct + Alocação Dinâmica com raylib
  * ---------------------------------------------------------------
  * Um jogador (retângulo) se move pela tela coletando moedas.
