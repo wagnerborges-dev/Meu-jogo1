@@ -43,7 +43,7 @@ void desenharMatriz(int **matriz, int linhas, int colunas) {
     for (int i = 0; i < linhas; i++) {
         for (int j = 0; j < colunas; j++) {
             // Células visitadas (1) ficam mais claras; não visitadas (0) ficam escuras
-            Color cor = (matriz[i][j] == 1) ? LIGHTGRAY 
+            Color cor = (matriz[i][j] == 1) ? (Color){20, 40, 70, 255} 
                                             : (Color){15, 30, 55, 255};
             DrawRectangle(j * TAM_CELULA, i * TAM_CELULA,
                           TAM_CELULA - 2, TAM_CELULA - 2, cor);
