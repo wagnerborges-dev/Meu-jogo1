@@ -1,22 +1,3 @@
-/*
- * Enum + Struct + Alocação Dinâmica com raylib
- * ---------------------------------------------------------------
- * Um jogador (retângulo) se move pela tela coletando moedas.
- * As moedas são um VETOR DINÂMICO de struct (malloc), e cada moeda
- * tem um campo do tipo enum que define sua raridade/cor/valor.
- *
- * Conceitos praticados (evolução da atividade1):
- *   - enum para representar categorias (TipoMoeda)
- *   - struct contendo um campo enum
- *   - malloc / free de um vetor de struct
- *   - ponteiro para struct (Moeda *) passado para funções que leem
- *     e alteram o dado original (ex.: marcar moeda como coletada)
- *   - aritmética de ponteiros para percorrer o vetor
- *
- * Compilar (Linux, com raylib instalada):
- *   gcc atividade2.c -o atividade2 -lraylib -lm -lpthread -ldl -lrt -lX11
- */
-
 #include "raylib.h"
 #include <stdlib.h>
 #include <time.h>
